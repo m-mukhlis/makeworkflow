@@ -1,0 +1,105 @@
+{
+  "comment": "Some example payloads we've captured from Azure DevOps. Note: We're missing some webhooks between payload 1 and 2. This simulates real-world scenarios where webhooks can be missed or arrive out of order.",
+  "payloads": [
+    {
+      "id": "1",
+      "eventType": "workitem.updated",
+      "resource": {
+        "id": 42,
+        "rev": 3,
+        "fields": {
+          "System.Id": 42,
+          "System.Title": "Implement user authentication",
+          "System.State": "Active",
+          "System.ChangedDate": "2025-06-15T10:30:00.000Z",
+          "System.ChangedBy": {
+            "displayName": "Sarah Chen",
+            "uniqueName": "sarah.chen@company.com"
+          }
+        },
+        "revision": {
+          "fields": {
+            "System.State": {
+              "oldValue": "New",
+              "newValue": "Active"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "2", 
+      "eventType": "workitem.updated",
+      "resource": {
+        "id": 42,
+        "rev": 5,
+        "fields": {
+          "System.Id": 42,
+          "System.Title": "Implement user authentication",
+          "System.State": "Active",
+          "System.ChangedDate": "2025-06-15T14:45:00.000Z",
+          "System.ChangedBy": {
+            "displayName": "Mike Johnson",
+            "uniqueName": "mike.j@company.com"
+          }
+        },
+        "revision": {
+          "fields": {
+            "System.State": {
+              "oldValue": "Resolved",
+              "newValue": "Active"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "3",
+      "eventType": "workitem.updated", 
+      "resource": {
+        "id": 99,
+        "rev": 2,
+        "fields": {
+          "System.Id": 99,
+          "System.Title": "Fix critical bug",
+          "System.State": "Closed",
+          "System.ChangedDate": "2025-06-10T09:00:00.000Z"
+        },
+        "revision": {
+          "fields": {
+            "System.State": {
+              "oldValue": "Active",
+              "newValue": "Closed"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "4",
+      "eventType": "workitem.updated",
+      "resource": {
+        "id": 42,
+        "rev": 3,
+        "fields": {
+          "System.Id": 42,
+          "System.Title": "Implement user authentication",
+          "System.State": "Active",
+          "System.ChangedDate": "2025-06-15T10:30:00.000Z",
+          "System.ChangedBy": {
+            "displayName": "Sarah Chen",
+            "uniqueName": "sarah.chen@company.com"
+          }
+        },
+        "revision": {
+          "fields": {
+            "System.State": {
+              "oldValue": "New",
+              "newValue": "Active"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

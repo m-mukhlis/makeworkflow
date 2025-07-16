@@ -1,0 +1,12 @@
+Azure DevOps Webhook Notes
+==============================
+
+We've noticed some quirks:
+- Work items don't always follow a linear path (New → Active → Resolved → Closed)
+- Items frequently move backwards (e.g., Resolved → Active when bugs are found)
+- We sometimes miss webhooks, so you might see gaps in the revision numbers
+- The ChangedBy field isn't always present (system changes?)
+- We occasionally get duplicate webhooks for the same change
+- State names vary by project template (e.g., "Active" vs "In Progress")
+
+Just FYI for whoever implements this...
